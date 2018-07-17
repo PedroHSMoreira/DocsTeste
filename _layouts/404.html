@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body class="{{ page.body_class }}">
+		<header>
+			{% include header.html %}
+		</header>
+		<section >
+			{% include 404.html %}
+		</section>
+
+		{% include footer.html %}
+		<script>
+			$(function() {
+				$('a[href*=\\#]').not(".no-smooth").on('click', function(event){
+					var el = $(this.hash);
+					if (el.length > 0) {
+						// event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 500);
+					}
+				});
+
+				$('svg').click(function() {
+					$(this).parent('form').submit();
+				});
+			});
+
+			document.getElementById("open-nav").addEventListener("click", function (event) {
+				event.preventDefault();
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

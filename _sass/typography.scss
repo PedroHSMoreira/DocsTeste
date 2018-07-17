@@ -9,11 +9,10 @@ html {
 body {
 	height: 100%;
 	max-height: 100%;
-	font-family: "Merriweather", serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	letter-spacing: 0.01rem;
 	font-size: 1.8em;
 	line-height: 1.75em;
-	color: #3A4145;
 	-webkit-font-feature-settings: 'kern' 1;
 	-moz-font-feature-settings: 'kern' 1;
 	-o-font-feature-settings: 'kern' 1;
@@ -80,6 +79,7 @@ h6 {
 a {
 	color: $link-color;
 	transition: color 0.3s ease;
+	
 }
 
 a:hover {
@@ -249,3 +249,65 @@ kbd {
 		font-size: 1.8rem
 	}
 }
+
+table {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+    display: inline-block;
+    max-width: 100%;
+    border-radius: .2rem;
+    font-size: 1.28rem;
+    overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	border-collapse: separate;
+    border-spacing: 0;
+}
+
+thead {
+	display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table:not([class] th) {
+	min-width: 10rem;
+    padding: 1.2rem 1.6rem;
+    background-color: rgba(0,0,0,.54) !important;
+    color: #fff;
+    vertical-align: top;
+}
+
+th {
+	font-weight: 400;
+	min-width: 10rem;
+    padding: 1.2rem 1.6rem;
+    background-color: rgba(0,0,0,.54) !important;
+    color: #fff;
+    vertical-align: top;
+}
+
+tbody {
+	display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table:not([class]) tr:first-child td {
+	border-top: 0;
+}
+
+table:not([class]) td {
+	padding: 1.2rem 1.6rem;
+    border-top: .1rem solid rgba(0,0,0,.07);
+    vertical-align: top;
+}
+
+td {
+	font-weight: 400;
+}
+

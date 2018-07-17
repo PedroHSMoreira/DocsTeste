@@ -8,17 +8,16 @@ google_analytics_key:
 disqus_shortname:
 newsletter_action:
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
+logo: /logo.png
 description: integração e Inovação
 author:
   name:
   email:
-  twitter: # twitter username without the @ symbol
+  twitter: 
 social:
-  name: Base Template
   links:
     - https://github.com/CloudCannon/base-jekyll-template
+lang: language_TERRITORY
 
 # -----
 # Build

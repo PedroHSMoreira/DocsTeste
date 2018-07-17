@@ -1,0 +1,26 @@
+<label class="switch_container">
+    <input id="night-mode" class="l" type="checkbox" aria-label="nigth-mode">
+    <span class="slider round"></span>
+</label>
+
+<script>
+
+    const nightModeStorage = sessionStorage.getItem('gmtNightMode');
+    const nightMode = document.querySelector('#night-mode');
+
+    if (nightModeStorage) {
+        document.documentElement.classList.add('night-mode');
+        nightMode.checked = true;
+    }
+
+    nightMode.addEventListener('click', () => {
+        document.documentElement.classList.toggle('night-mode');
+
+        if (document.documentElement.classList.contains('night-mode')) {
+            sessionStorage.setItem('gmtNightMode', true);
+            return;
+        }
+        sessionStorage.removeItem('gmtNightMode');
+    });
+
+</script>

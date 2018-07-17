@@ -1,0 +1,28 @@
+<style>
+	#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+</style>
+
+<div class="wrapper">
+		
+				<section class="top-bar">
+					<div class="logo"><a href="/">{% include logo.html %}</a></div>
+					{% include navigation.html %}
+				</section>
+				<section class="hero_search">
+					<h1>Como podemos lhe ajudar?</h1>
+					
+					<!-- <p>Everything you need to know about running our software.</p> -->
+					{% include search.html %}
+				</section>
+			</div>
