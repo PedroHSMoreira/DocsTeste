@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+        <div class="jumbotron text-center">
+                <h1 class="bml">Como podemos lhe ajudar?</h1>
+                <p class="bmm">Talvez os tópicos abaixo possam lhe ajudar a encontrar o que você procura</p>
+              </div>
+              
+              <div class="container-fluid" id="myDIV">
+                  <div class="bja">
+                     
+                          <button class="accordion">O STCP Enterprise funciona no Windows Server 2003 em Cluster? </button>
+                          <div class="panel">
+                              <p>  Sim, funciona.</p>
+                          </div>
+              
+                          <button class="accordion">No STCP Enterprise, é possível receber somente arquivos com nomes específicos? </button>
+                          <div class="panel">
+                              <p>  Sim. Você pode configurar, na guia Avançadas do usuário (através de expressão regular), os nomes válidos. 
+                                </p>
+                          </div>
+              
+                          <button class="accordion">Como faço o backup das configurações que tenho hoje para efetuar a nova instalação?
+                                Necessito de um procedimento de reinstalação do sistema Riversoft STCP OFTP Server Lite, pois preciso trocar o programa de servidor.  </button>
+                          <div class="panel">
+                              <p>  Primeiramente você deverá realizar o backup do diretório onde está instalado o STCP Lite. Se você estiver usando o diretório padrão, o caminho é C:\STCPODT. Para verificar os caminhos dos diretórios, abra o configurador do STCP e na guia Geral terá as informações do diretório de CONTROLE e diretório de DADOS. As duas estruturas deverão estar configuradas na rotina de backup, no caso de serem diferentes.
+
+                                    Para a restauração o processo é bem simples e está descrito abaixo:
+                                    
+                                <br>1) Instale o STCP Lite a partir do disco disponibilizado pela Riversoft no novo servidor;
+                                <br>2) Após a instalação, abra o configurador e insira o número serial e marque a opção SERVIÇO na guia GERAL;
+                                <br>3) Clique em OK e não ative o produto quando ele sugerir, sobrescreva o diretório de instalação com o backup da antiga estrutura; caso o diretório de dados esteja em outro diretório, verifique se a estrutura está corretamente criada.
+                                <br>4) Inicie o serviço do STCP Lite. </p>
+                          </div>                               
+                      </div>
+                  </div>
+
+
+        <script src="../assets/js/script.js"></script>
+    </body>
+    </html>
